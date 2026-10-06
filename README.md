@@ -1,6 +1,6 @@
-# iq-agent-cheri
+﻿# ia-agent-cheri
 
-**English** · [Español](#español)
+**English** Â· [EspaÃ±ol](#espaÃ±ol)
 
 A terminal agent (PowerShell) that runs the cognitive-evaluation prompt in `prompt_sistema.md` against the Claude API (`claude-opus-5-5`). The evaluation itself is in Spanish.
 
@@ -30,9 +30,9 @@ If PowerShell blocks the script: `powershell -ExecutionPolicy Bypass -File .\age
 
 ---
 
-## Español
+## EspaÃ±ol
 
-Agente de terminal (PowerShell) que corre el prompt de evaluación cognitiva de `prompt_sistema.md` contra la API de Claude (`claude-opus-5-5`).
+Agente de terminal (PowerShell) que corre el prompt de evaluaciÃ³n cognitiva de `prompt_sistema.md` contra la API de Claude (`claude-opus-5-5`).
 
 ### Uso
 
@@ -42,17 +42,17 @@ $env:ANTHROPIC_API_KEY = "sk-ant-..."   # o bien: ant auth login
 ```
 
 - `/salir` pausa y guarda; al volver a ejecutar `.\agente.ps1` se retoma.
-- `-Nueva` empieza de cero (la sesión anterior se respalda).
+- `-Nueva` empieza de cero (la sesiÃ³n anterior se respalda).
 - `-Sesion nombre` lleva evaluaciones separadas.
 - `-Esfuerzo low|medium|high|xhigh|max` (por defecto `high`).
 
 Si PowerShell bloquea el script: `powershell -ExecutionPolicy Bypass -File .\agente.ps1`
 
-### Qué agrega el script además del chat
+### QuÃ© agrega el script ademÃ¡s del chat
 
-- **Registro oculto**: el evaluador puntúa dentro de `<registro>`; no se muestra, pero se guarda para sobrevivir entre sesiones.
-- **Memoria de trabajo**: los estímulos en `<memoria segundos="N">` se muestran N segundos y luego se borra la pantalla y el scroll.
-- **Tiempos**: cada respuesta lleva adjunto, sin que lo veas, cuánto tardaste en enviarla.
+- **Registro oculto**: el evaluador puntÃºa dentro de `<registro>`; no se muestra, pero se guarda para sobrevivir entre sesiones.
+- **Memoria de trabajo**: los estÃ­mulos en `<memoria segundos="N">` se muestran N segundos y luego se borra la pantalla y el scroll.
+- **Tiempos**: cada respuesta lleva adjunto, sin que lo veas, cuÃ¡nto tardaste en enviarla.
 
 ### Para no contaminar la prueba
 
